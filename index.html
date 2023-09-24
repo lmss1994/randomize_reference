@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randomize Reference</title>
+    <link rel="icon" type="image/x-icon" href="svg/Favicon.svg">
+    <link rel="stylesheet" href="randomize_reference.css">
+</head>
+<body>
+    <!-- ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ • • • Background Effects Element • • • ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ -->
+
+    <div id="brightness"></div>
+
+    <!-- ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ • • • Top Page Content • • • ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ -->
+
+    <div class="logo"><img src="svg/logo.svg" alt="reference randomiser logo"></div>
+    <div class="open_menu_button buttons_effect" onclick="openMenu()"><img src="svg/arrow.svg" alt="open"  ></div>
+
+    <!-- ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ • • • Options Menu • • • ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ -->
+
+    <div id="menu">
+        <div class="menu_content">
+            <div class="logo"><img src="svg/logo.svg" alt="reference randomiser logo"></div>
+
+            <!-- ████▄▀▄▀▄▀▄▀▄▀▄▀████ • • Columns controllers • • ████▄▀▄▀▄▀▄▀▄▀▄▀████ --> 
+
+            <!-- ████▄▀▄▀▄▀████ • Columns Amount • ████▄▀▄▀▄▀████ --> 
+
+            <h3>Column Amount</h3>
+
+            <div class="columns_amount__controller_container option_container">
+                <div class="option_sub_container">
+                    <div class="less_columns" onclick="document.getElementById('columns_amount').stepDown();showColumns()"></div>
+                    <input type="number" id="columns_amount" name="columns_amount" min="1" max="5" step="1" value="3">
+                    <div class="columns__container">
+                        <div class="options_menu_columns"></div><div class="options_menu_columns"></div><div class="options_menu_columns"></div><div class="options_menu_columns"></div><div class="options_menu_columns"></div>
+                    </div>
+                    <div class="more_columns" onclick="document.getElementById('columns_amount').stepUp();showColumns()"></div>
+                </div>
+            </div>
+
+            <!-- ████▄▀▄▀▄▀████ • Columns Width • ████▄▀▄▀▄▀████ --> 
+
+            <h3>Image Size</h3>
+
+            <div class="columns_width__controller_container option_container">
+                <input type="range" min="290" max="660" step="10" value="280" class="columns_width__controller" id="columns_width__controller" oninput="widthChange()">
+            </div>
+
+            <!-- ████▄▀▄▀▄▀▄▀▄▀▄▀████ • • Background controllers • • ████▄▀▄▀▄▀▄▀▄▀▄▀████ --> 
+
+            <!-- ████▄▀▄▀▄▀████ • Background color pallet • ████▄▀▄▀▄▀████ -->             
+
+            <h3>Temperature</h3>
+
+            <div class="color_pallet__controller_container option_container">
+                <img src="svg/hot.svg" alt="Hot" title="Hot">
+                <label class="color_pallet__controller">
+                    <input type="checkbox" onchange="document.body.style.background = this.checked ? 'linear-gradient(243.18deg, #1AD6FF 0%, #C31AFF 100%) no-repeat fixed' : 'linear-gradient(243.18deg, #FFA31A 0%, #FF1A95 100%) no-repeat fixed'">
+                    <span class="color_pallet__toggle"></span>
+                </label>
+                <img src="svg/cold.svg" alt="Cold" title="Cold">
+            </div>
+
+            <!-- ████▄▀▄▀▄▀████ • Background brightness • ████▄▀▄▀▄▀████ --> 
+
+            <h3>Brightness</h3>
+
+            <div class="brightness__controller_container option_container">
+                <input type="range" min="0" max="0.75" step="0.05" value="0" class="brightness__controller" id="myRange" oninput="document.getElementById('brightness').style.opacity = this.value;">
+            </div>
+
+            <div class="close_menu_button buttons_effect" onclick="closeMenu()"><img src="svg/arrow.svg" alt="Close"  ></div>
+        </div>
+    </div>
+
+    <!-- ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ • • • Middle Page Content • • • ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ -->
+    <!-- ████ This is where the slideshow will be placed                                     ██████
+         ████ The content of the slides will follow the same template                        ██████
+         ████ With the only thing changing being their assigned latter ( A , B , C , D , E ) ██████ -->
+
+    <div class="main_container">
+
+        <div class="main_columns">
+            <div id="SlideShow_A" class="slideshow"></div>
+            <div class="bottom_buttons">
+                <div class="next_slide_button buttons_effect" onclick="nextSlide('A')"><img src="svg/next_image.svg" alt="next image"  ></div>
+                <div class="no_slide_button buttons_effect" onclick="noSlide('A')"><img src="svg/no_image.svg" alt="no image"></div>
+                <div class="random_slide_button buttons_effect" onclick="randomSlide('A')"><img src="svg/random.svg" alt="random image"></div>
+                <input class="Submit" type="file" multiple="multiple" accept="image/*" id="image_A" onChange="upload('A')">
+                <div class="submit_button buttons_effect"><label for="image_A"><img src="svg/add_image.svg" alt="add image"></label></div>
+            </div>
+        </div>
+
+        <div class="main_columns">
+            <div id="SlideShow_B" class="slideshow"></div>
+            <div class="bottom_buttons">
+                <div class="next_slide_button buttons_effect" onclick="nextSlide('B')"><img src="svg/next_image.svg" alt="next image"></div>
+                <div class="no_slide_button buttons_effect" onclick="noSlide('B')"><img src="svg/no_image.svg" alt="no image"></div>
+                <div class="random_slide_button buttons_effect" onclick="randomSlide('B')"><img src="svg/random.svg" alt="random image"></div>
+                <input class="Submit" type="file" multiple="multiple" accept="image/*" id="image_B" onChange="upload('B')">
+                <div class="submit_button buttons_effect"><label for="image_B"><img src="svg/add_image.svg" alt="add image"></label></div>
+            </div>
+        </div>
+
+        <div class="main_columns">
+            <div id="SlideShow_C" class="slideshow"></div>
+            <div class="bottom_buttons">
+                <div class="next_slide_button buttons_effect" onclick="nextSlide('C')"><img src="svg/next_image.svg" alt="next image"></div>
+                <div class="no_slide_button buttons_effect" onclick="noSlide('C')"><img src="svg/no_image.svg" alt="no image"></div>
+                <div class="random_slide_button buttons_effect" onclick="randomSlide('C')"><img src="svg/random.svg" alt="random image"></div>
+                <input class="Submit" type="file" multiple="multiple" accept="image/*" id="image_C" onChange="upload('C')">
+                <div class="submit_button buttons_effect"><label for="image_C"><img src="svg/add_image.svg" alt="add image"></label></div>
+            </div>
+        </div>
+
+        <div class="main_columns">
+            <div id="SlideShow_D" class="slideshow"></div>
+            <div class="bottom_buttons">
+                <div class="next_slide_button buttons_effect" onclick="nextSlide('D')"><img src="svg/next_image.svg" alt="next image"></div>
+                <div class="no_slide_button buttons_effect" onclick="noSlide('D')"><img src="svg/no_image.svg" alt="no image"></div>
+                <div class="random_slide_button buttons_effect" onclick="randomSlide('D')"><img src="svg/random.svg" alt="random image"></div>
+                <input class="Submit" type="file" multiple="multiple" accept="image/*" id="image_D" onChange="upload('D')">
+                <div class="submit_button buttons_effect"><label for="image_D"><img src="svg/add_image.svg" alt="add image"></label></div>
+            </div>
+        </div>
+
+        <div class="main_columns">
+            <div id="SlideShow_E" class="slideshow"></div>
+            <div class="bottom_buttons">
+                <div class="next_slide_button buttons_effect" onclick="nextSlide('E')"><img src="svg/next_image.svg" alt="next image"></div>
+                <div class="no_slide_button buttons_effect" onclick="noSlide('E')"><img src="svg/no_image.svg" alt="no image"></div>
+                <div class="random_slide_button buttons_effect" onclick="randomSlide('E')"><img src="svg/random.svg" alt="random image"></div>
+                <input class="Submit" type="file" multiple="multiple" accept="image/*" id="image_E" onChange="upload('E')">
+                <div class="submit_button buttons_effect"><label for="image_E"><img src="svg/add_image.svg" alt="add image"></label></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ • • • Bottom Page Content • • • ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ -->
+
+    <div class="bottom_buttons">
+        <div class="no_slide_big_button buttons_big_effect" onclick="noSlide('A'), noSlide('B'), noSlide('C'), noSlide('D'), noSlide('E')"><img src="svg/no_image.svg" alt="no image"></div>
+        <div class="random_slide_big_button buttons_big_effect" onclick="randomSlide('A'), randomSlide('B'), randomSlide('C'), randomSlide('D'), randomSlide('E')"><img src="svg/random.svg" alt="random image"></div>
+    </div>
+
+    <script src="randomize_reference.js"></script>
+</body>
+</html>

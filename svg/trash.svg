@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="svg_x5F_fill_x5F_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 1300 1000" style="enable-background:new 0 0 1300 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF0000;}
+	.st1{fill:none;}
+	.st2{clip-path:url(#SVGID_2_);}
+	.st3{fill:#FFFFFF;}
+	.st4{clip-path:url(#SVGID_4_);}
+	.st5{clip-path:url(#SVGID_6_);}
+	.st6{clip-path:url(#SVGID_8_);}
+	.st7{clip-path:url(#SVGID_10_);}
+	.st8{fill-rule:evenodd;clip-rule:evenodd;fill:#FF0000;}
+	.st9{clip-path:url(#SVGID_12_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st10{clip-path:url(#SVGID_14_);fill:#FFFFFF;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_1_" width="1300" height="1000"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+	</clipPath>
+	<g class="st2">
+		<path class="st3" d="M450,300v460c0,22.1,17.9,40,40,40h320c22.1,0,40-17.9,40-40V300H450z M570,720c0,11-9,20-20,20s-20-9-20-20
+			V360c0-11,9-20,20-20s20,9,20,20V720z M670,720c0,11-9,20-20,20s-20-9-20-20V360c0-11,9-20,20-20s20,9,20,20V720z M770,720
+			c0,11-9,20-20,20s-20-9-20-20V360c0-11,9-20,20-20s20,9,20,20V720z"/>
+		<path class="st3" d="M830,220h-60c-11,0-20-9-20-20v0c0-22.1-17.9-40-40-40H590c-22.1,0-40,17.9-40,40v0c0,11-9,20-20,20h-60
+			c-22.1,0-40,17.9-40,40v20h440v-20C870,237.9,852.1,220,830,220z M610,200h80c11,0,20,9,20,20v0H590v0C590,209,599,200,610,200z"
+			/>
+	</g>
+</g>
+</svg>

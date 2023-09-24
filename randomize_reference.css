@@ -1,0 +1,337 @@
+/*████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ • • • General or not Group Specific • • • ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████*/
+
+* { margin: 0; padding: 0;}
+h3 {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+}
+.logo {
+    display: flex;
+    width: 100%;
+}
+.logo img {
+    filter: drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.75));
+    margin: 15px auto;
+    width: 260px;
+}
+
+/*████▄▀▄▀▄▀▄▀▄▀▄▀████ • • Background • • ████▄▀▄▀▄▀▄▀▄▀▄▀████*/
+
+body {
+    background: linear-gradient(243.18deg, #FFA31A 0%, #FF1A95 100%) no-repeat fixed;
+    background-clip: border-box
+}
+#brightness {
+    position: fixed;
+    z-index: -1;
+    top: 0; left: 0; right: 0; bottom: 0;
+    opacity: 0;
+    background-color: black;
+}
+
+/*████▄▀▄▀▄▀▄▀▄▀▄▀████ • • Button • • ████▄▀▄▀▄▀▄▀▄▀▄▀████*/
+
+.bottom_buttons {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    justify-content: space-between;
+    width: 270px; height: 100px;
+    margin: 20px auto 20px auto;
+}
+.bottom_buttons input {
+    display: none;
+}
+
+/*████▄▀▄▀▄▀████ • Buttons to open and close the option menu • ████▄▀▄▀▄▀████*/
+
+.open_menu_button, .close_menu_button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-radius: 25px;
+}
+.open_menu_button img, .close_menu_button img {
+    height: 50px;
+    margin-left: 7.5px;
+}
+.close_menu_button img {
+    rotate: 180deg;
+}
+
+/*████▄▀▄▀▄▀████ • Buttons directly under the slideshows • ████▄▀▄▀▄▀████*/
+
+.main_columns .bottom_buttons {
+    width: 280px; height: 50px;
+    margin: 10px auto 20px auto;
+}
+.next_slide_button {
+    border-radius: 25px 5px 5px 25px;
+}
+.no_slide_button {
+    border-radius: 5px 5px 5px 5px;
+}
+.random_slide_button {
+    border-radius: 5px 5px 5px 5px;
+}
+.submit_button {
+    border-radius: 5px 25px 25px 5px;
+}
+
+/*████▄▀▄▀▄▀████ • Buttons within the slides of the slideshows • ████▄▀▄▀▄▀████*/
+
+.delete_button {
+    position: absolute;
+    bottom: 84px;
+    left: calc(50% - 32.5px);
+    border-radius: 25px 25px;
+}
+
+/*████▄▀▄▀▄▀████ • Big Buttons in the bottom of the page • ████▄▀▄▀▄▀████*/
+
+.no_slide_big_button {
+     border-radius: 50px 10px 10px 50px;
+    }
+.random_slide_big_button {
+    border-radius: 10px 50px 50px 10px;
+}
+
+/*████▄▀▄▀▄▀████ • Buttons Effects • ████▄▀▄▀▄▀████*/
+
+
+.buttons_effect {
+    width: 65px; height: 50px;
+    background: #757575;
+    box-shadow: 0 7px #4e4e4e;
+    cursor: pointer;
+}
+.buttons_big_effect {
+    width: 130px; height: 100px;
+    background: #757575;
+    box-shadow: 0 7px #4e4e4e;
+    cursor: pointer;
+}
+.buttons_effect:hover, .buttons_big_effect:hover {
+    background: #646464;
+}
+.buttons_effect:active, .buttons_big_effect:active {
+    background: #646464;
+    box-shadow: 0 3px #3e3e3e;
+    transform: translateY(4px);
+} 
+
+/*████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ • • • Options Menu • • • ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████*/
+
+#menu {
+    position: fixed;
+    z-index: 100;
+    width: 100%; height: 100%;
+    top: 0; left: 0;
+    background: linear-gradient( 90deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.50) 40%, rgba(0, 0, 0, 0.50) 0%, rgba(0, 0, 0, 0) 100%);
+    overflow-y: hidden;
+    transition: 0.5s;
+}
+.option_container {
+    height: 50px; width: 200px;
+    border-radius: 25px;
+    background: rgba(0, 0, 0, 0.500);
+    margin: 5px 0 20px 0;
+}
+.option_sub_container {
+    position: absolute;
+    display: flex;
+    height: 42px; width: 192px;
+    margin: 4px;
+    border-radius: 21px;
+    background: rgba(0, 0, 0, 0.500);
+}
+.menu_content {
+    position: relative;
+    top: 0;
+    width: 280px; height: 100%;
+    margin: auto;
+    overflow: hidden;
+    background: rgba(230, 230, 230, 0.9);
+}
+.columns_amount__controller_container, .columns_width__controller_container, .color_pallet__controller_container, .brightness__controller_container {
+    margin-left: auto; margin-right: auto;
+}
+
+/*████▄▀▄▀▄▀▄▀▄▀▄▀████ • • Columns controllers • • ████▄▀▄▀▄▀▄▀▄▀▄▀████*/
+/* Specific option controllers related to the columns */
+
+/*████▄▀▄▀▄▀████ • Columns Amount controller • ████▄▀▄▀▄▀████*/
+/* Option controller responsible for the amount of columns to be display */
+
+.less_columns {
+    width: 32px; height: 42px;
+    background-image: url(svg/less.svg);
+    cursor: pointer;
+}
+.columns__container {
+    display: flex;
+    justify-content: center;
+    width: 128px; height: 42px;
+}
+#columns_amount { display: none; }
+
+.options_menu_columns {
+    width: 20px; height: 42px;
+    margin: 0 2px;
+    background: white;
+}
+.more_columns {
+    width: 32px; height: 42px;
+    background-image: url(svg/more.svg);
+    cursor: pointer;
+}
+
+/*████▄▀▄▀▄▀████ • Columns Width controller • ████▄▀▄▀▄▀████*/
+/* Option controller responsible for the width of columns */
+
+.columns_width__controller {
+    -webkit-appearance: none;
+    height: 42px; width: 192px;
+    margin: 4px;
+    border-radius: 21px;
+    background: rgba(0, 0, 0, 0.500);
+}
+.columns_width__controller::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none; width: 42px;
+    height: 42px;
+    background-image: url(svg/size.svg);
+    cursor: pointer;
+}
+
+/*████▄▀▄▀▄▀▄▀▄▀▄▀████ • •  Background controllers • • ████▄▀▄▀▄▀▄▀▄▀▄▀████*/
+/* Specific option controllers related to the background */
+
+/*████▄▀▄▀▄▀████ • Background color pallet controller • ████▄▀▄▀▄▀████*/
+/* Option controller responsible for the background color */
+
+.color_pallet__controller_container {
+    display: flex;
+    justify-content: space-between;
+}
+.color_pallet__controller {
+    position: relative;
+    display: inline-block;
+    height: 40px; width: 90px;
+    margin: 5px;
+}
+.color_pallet__controller input {
+    width: 0; height: 0;
+    opacity: 0;
+}
+.color_pallet__toggle {
+    position: absolute;
+    cursor: pointer;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: 25px;
+    background-color: #FFA31A;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.color_pallet__toggle:before {
+    position: absolute;
+    content: "";
+    width: 32px; height: 32px;
+    left: 4px; bottom: 4px;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .color_pallet__toggle { background-color: #1AD6FF; }
+
+input:checked + .color_pallet__toggle:before {
+    -webkit-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    transform: translateX(50px);
+}
+
+/*████▄▀▄▀▄▀████ • Background brightness controller • ████▄▀▄▀▄▀████*/
+/* Option controller responsible for the background brightness levels */
+
+.brightness__controller {
+    -webkit-appearance: none;
+    height: 42px; width: 192px;
+    margin: 4px;
+    border-radius: 21px;
+    background: rgba(0, 0, 0, 0.500);
+}
+.brightness__controller::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 42px; height: 42px;
+    background-image: url(svg/light.svg);
+    cursor: pointer;
+}
+
+/*████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ • • • Main Container • • • ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████*/
+/* this is the Container that holds all the slideshows */
+
+.main_container {
+    display: flex;
+    overflow: auto;
+    width: 100%;
+}
+.main_columns {
+    max-width: 290px;
+    min-width: 290px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/*████▄▀▄▀▄▀▄▀▄▀▄▀████ • • Slideshows style • • ████▄▀▄▀▄▀▄▀▄▀▄▀████*/
+
+.slideshow {
+    position: relative;
+    z-index: 10;
+    width: 95%;
+    padding-bottom: calc(95% + 70px);
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: rgba(36, 0, 34, 0.5);
+}
+
+/*████▄▀▄▀▄▀████ • Slides • ████▄▀▄▀▄▀████*/
+
+.Slide_A, .Slide_B, .Slide_C, .Slide_D, .Slide_E {
+    position: absolute;
+    z-index: 10;
+    bottom: -70px; left: 0;
+    width: 100%; height: 0;
+    opacity: 0%;
+    overflow-y: hidden;
+    transition: 0.35s;
+    flex-direction: column;
+}    
+.image {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    aspect-ratio: 1/1;
+}  
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    border-radius: 20px;
+}
+.active {
+    top: 0;
+    bottom: auto;
+    opacity: 100%;
+    height: calc(100% + 70px);
+}
+
+/*████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████ • • • • • Responsive •  • • • • ████▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀▄▀████*/
+
+@media (max-height: 530px) { 
+    .menu_content { overflow: auto;}
+}

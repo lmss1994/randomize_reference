@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="svg_x5F_fill_x5F_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF0000;}
+	.st1{fill:none;}
+	.st2{clip-path:url(#SVGID_2_);}
+	.st3{fill:#FFFFFF;}
+	.st4{clip-path:url(#SVGID_4_);}
+	.st5{clip-path:url(#SVGID_6_);}
+	.st6{clip-path:url(#SVGID_8_);}
+	.st7{clip-path:url(#SVGID_10_);}
+	.st8{clip-path:url(#SVGID_12_);}
+	.st9{fill-rule:evenodd;clip-rule:evenodd;fill:#FF0000;}
+	.st10{clip-path:url(#SVGID_14_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st11{clip-path:url(#SVGID_16_);fill:#FFFFFF;}
+</style>
+<g>
+	<defs>
+		<rect id="SVGID_13_" x="0" width="1000" height="1000"/>
+	</defs>
+	<clipPath id="SVGID_2_">
+		<use xlink:href="#SVGID_13_"  style="overflow:visible;"/>
+	</clipPath>
+	<path style="clip-path:url(#SVGID_2_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;" d="M500,140c-140,140-80,340-80,340
+		c-60-20-60-80-60-80c-60,60-100,140-100,220c0,120,60,200,140,240c0,0-20-40-20-80c0-20,20-60,60-100c60-60,60-140,60-140
+		c40,20,60,180,60,180c20,0,20-60,20-60c20,20,40,77.6,40,100c0,80-20,100-20,100c80-40,140-100,140-200S640,460,600,400
+		C520,280,500,140,500,140z"/>
+</g>
+</svg>

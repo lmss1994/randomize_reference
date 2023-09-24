@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="svg_x5F_fill_x5F_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" viewBox="0 0 840 840" style="enable-background:new 0 0 840 840;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FF0000;}
+	.st1{fill:none;}
+	.st2{clip-path:url(#SVGID_2_);}
+	.st3{fill:#FFFFFF;}
+	.st4{clip-path:url(#SVGID_4_);}
+	.st5{clip-path:url(#SVGID_6_);}
+	.st6{clip-path:url(#SVGID_8_);}
+	.st7{clip-path:url(#SVGID_10_);}
+	.st8{clip-path:url(#SVGID_12_);}
+	.st9{fill-rule:evenodd;clip-rule:evenodd;fill:#FF0000;}
+	.st10{clip-path:url(#SVGID_14_);fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+	.st11{clip-path:url(#SVGID_16_);fill:#FFFFFF;}
+</style>
+<g>
+	<path class="st3" d="M640,200H200c-11,0-20,9-20,20v400c0,11,9,20,20,20h440c11,0,20-9,20-20V220C660,209,651,200,640,200z
+		 M640,340c0,11-9,20-20,20c-11,0-20-9-20-20v-51.7L268.3,580l51.7,0c11,0,20,9,20,20v0c0,11-9,20-20,20H220c-11,0-20-9-20-20V500
+		c0-11,9-20,20-20c11,0,20,9,20,20v51.7L571.7,260l-51.7,0c-11,0-20-9-20-20v0c0-11,9-20,20-20h100c11,0,20,9,20,20V340z"/>
+	<path class="st3" d="M420,0C188,0,0,188,0,420s188,420,420,420s420-188,420-420S652,0,420,0z M700,640c0,22.1-17.9,40-40,40H180
+		c-22.1,0-40-17.9-40-40V200c0-22.1,17.9-40,40-40h480c22.1,0,40,17.9,40,40V640z"/>
+</g>
+</svg>

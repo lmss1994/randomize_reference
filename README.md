@@ -1,4 +1,5 @@
 This is a Multi column Image picker that has some customization option
+
 Column Amount  -  Image size  -  Temperature - Brightness
 
 You can add multiple images at the same time and either randomize 1 column or all columns at the same time
